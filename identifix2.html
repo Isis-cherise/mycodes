@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+body{
+	background-color: DarkCyan;
+}
+table{
+	background-color: Lightgrey;
+}
+section{
+	background-color: white;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FEC85B;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  font-size: 18px;
+  color: black;
+  line-height: 100px;
+  text-align: center;
+  background: #FEC85B;
+  float: left;
+}
+</style>
+<script>
+	function myFunction() {
+		document.getElementById("demo").innerHTML = "You learned it!";
+		document.getElementById("header1").innerHTML = "I changed the text";
+		document.getElementById("c1").innerHTML = "did it work?";
+		document.getElementById("c2").innerHTML = "updated numbers";
+	}
+</script>
+<body>
+<p id="demo"> This is a test to show you javascript</p>
+<button onclick="myFunction()">Try it</button>
+
+<section>
+<figure>
+	<img src="https://content.repairpalcdn.com/images/managed/content_images/encyclopedia/identifix_logo.jpg">
+</figure>
+<div align="right"><button style= "background-color: #FEC85B; color: white; font-size: 12pt"type="button">Call us (800)555-7470</button><button style= "background-color: #FEC85B; color: white; font-size: 12pt"type="button">Request Assistance</button></div><br></br>
+<button style= "background-color: #FEC85B; color: black; font-size: 12pt"type="button"><a href="https://www.identifix.com">Home</a></button><button style= "background-color: #FEC85B; color: black; font-size: 12pt"type="button"><a href="https://www.identifix.com/direct-hit/">Direct-Hit</a></button><button style= "background-color: #FEC85B; color: black; font-size: 12pt"type="button"><a href="https://www.identifix.com/shop-management/">Direct-Shop</a></button><button style= "background-color: #FEC85B; color: black; font-size: 12pt"type="button"><a href="https://www.identifix.com/marketing/">Marketing</a></button><button style= "background-color: #FEC85B; color: black; font-size: 12pt"type="button"><a href="https://www.identifix.com/repair-hotline/">Virtual Tech</a></button><button style= "background-color: #FEC85B; color: black; font-size: 12pt"type="button"><a href="https://www.identifix.com/subscribe/">Subscribe</a></button><button style= "background-color: #FEC85B; color: black; font-size: 12pt"type="button"><a href="https://www.identifix.com/about/">About</a></button><br></br>
+</section>
+
+<center>
+<div id="c1" class="circle">1.8 Hours</div><div id="c2" class="circle">0</div>
+<div id="c3" class="circle">$0</div><div id="c4" class="circle">$0</div>
+</center>
+<br></br>
+
+
+<div align="left"><strong>Please Fill Out The Following:</strong></div><br></br>
+
+<center><table id="mainTable">
+	<tr>
+    	<th id="header1"><div align="left">1.The Shop Info</div></th>
+        <th>2.The Tech Info</th>
+        <th>3.Billing Info</th>
+    </tr>
+    <tr>
+    	<td>Shop Days Per Week<div align="under"><div class="dropdown">
+  <button style= "background-color: white; color: grey; font-size: 14pt"><em>Please Select</em></button>
+  <div class="dropdown-content">
+    <p>Monday</p>
+    <p>Tuesday</p>
+    <p>Wednesday</p>
+    <p>Thursday</p>
+    <p>Friday</p>
+    <p>Saturday</p>
+    <p>Sunday</p>
+  </div>
+</div></div></td><br></br>
+        <td>Average Tech Rate<div align="under"><textarea></textarea></td></div></td>
+        <td>Average Parts Per Bill
+        <div align="under"><textarea></textarea></td></div>
+    </tr>
+    <tr>
+    	<td>Shop Hours<div align="under"><div class="dropdown">
+  <button style= "background-color: white; color: grey; font-size: 14pt"><em>Please Select</em></button>
+  <div class="dropdown-content">
+    <p>8am</p>
+    <p>9am</p>
+    <p>10am</p>
+    <p>etc...</p>
+  </div>
+</div></div></td>
+        <td>Customer Retail Rate<div align="under"><textarea></textarea></td></div></td>
+        <td>Part Margin<div align="under"><textarea></textarea></td></div></td>
+    </tr>
+    <tr>
+    	<td>Number Of Bays<div align="under"><div class="dropdown">
+  <button style= "background-color: white; color: grey; font-size: 14pt"><em>Please Select</em></button>
+  <div class="dropdown-content">
+    <p>1</p>
+    <p>2</p>
+    <p>3</p>
+    <p>4</p>
+    <p>5</p>
+  </div>
+</div></div></td>
+        <td>Margin Per Hour<div align="under"><textarea></textarea></td></div></td>
+        <td>Parts Profit Per Service<div align="under"><textarea></textarea></td></div></td>
+    </tr>
+    <tr>
+    	<td>Average Time Per Repair<div align="under"><div class="dropdown">
+  <button style= "background-color: white; color: grey; font-size: 12pt"><em>Indicate the average time per repair</em></button>
+  <div class="dropdown-content">
+    <p><div class="dropdown-content">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRbkZGZVcRI1TwYDdxs-4bR3OEerbP67roaVHfw-OX_WUkCmti" alt="Analog Clock" width="300" height="300">
+    <div class="desc">Analog Clock</div>
+  </div>
+  </p>
+  </div>
+</div></div></td>
+    </tr>
+    <tr>
+    	<td>Number of Repairs Per Month<div align="under"><textarea></textarea></td></div></td>
+    	<td></td>
+        <td><button style= "background-color: #FEC85B; color: white; font-size: 18pt" type="button" onclick="alert('This will submit and calculate')">SUBMIT</button></td>
+    </tr>
+        
+</table></center><br></br>
+
+<section>
+<u><div align="left"><a href="https://www.identifix.com/terms-of-use/"><font color="black">Terms of Use</font></a></div></u> 
+ <u><div align="center"><a href="https://www.identifix.com/system-requirements/"><font color="black">System Requirments</font></a></div></u>  <u><div align="right"><a href="https://www.identifix.com/testimonials/"><font color="black">Testimonials</font></a></div></u> 
+<u><div align="left"><a href="https://www.identifix.com/privacy-policy/"><font color="black">Privacy Policy</font></a></div></u><br></br> <u><a href="https://www.identifix.com/fix-of-the-week/"><font color="black">Fix of the Week</font></a></u> <u><div align="center"><a href="https://www.identifix.com/faq/"><font color="black">FAQ</font></a></div></u> <u><div align="right"><a href="https://www.identifix.com/about/contact/"><font color="black">Contact Info</font></a></div></u><br></br>
+<div align="right"><button style= "background-color: DodgerBlue; color: white; font-size: 12pt" type="button" onclick="alert('This will submit')">Submit</button></div>
+</section>
+
+
+
+</body>
+</html>
