@@ -31,6 +31,7 @@ section{
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
 .circle {
   width: 100px;
   height: 100px;
@@ -45,15 +46,15 @@ section{
 </style>
 <script>
 	function myFunction() {
-		document.getElementById("demo").innerHTML = "You learned it!";
-		document.getElementById("header1").innerHTML = "I changed the text";
-		document.getElementById("c1").innerHTML = "did it work?";
-		document.getElementById("c2").innerHTML = "updated numbers";
+		
+		document.getElementById("c1").innerHTML = "will update";
+		document.getElementById("c2").innerHTML = "will update";
+		document.getElementById("c3").innerHTML = "will update";
+		document.getElementById("c4").innerHTML = "will update";
 	}
 </script>
 <body>
-<p id="demo"> This is a test to show you javascript</p>
-<button onclick="myFunction()">Try it</button>
+
 
 <section>
 <figure>
@@ -74,7 +75,7 @@ section{
 
 <center><table id="mainTable">
 	<tr>
-    	<th id="header1"><div align="left">1.The Shop Info</div></th>
+    	<th><div align="left">1.The Shop Info</div></th>
         <th>2.The Tech Info</th>
         <th>3.Billing Info</th>
     </tr>
@@ -82,13 +83,13 @@ section{
     	<td>Shop Days Per Week<div align="under"><div class="dropdown">
   <button style= "background-color: white; color: grey; font-size: 14pt"><em>Please Select</em></button>
   <div class="dropdown-content">
-    <p>Monday</p>
-    <p>Tuesday</p>
-    <p>Wednesday</p>
-    <p>Thursday</p>
-    <p>Friday</p>
-    <p>Saturday</p>
-    <p>Sunday</p>
+    <a href="#Monday">Monday</a><br></br>
+    <a href="#Tuesday">Tuesday</a><br></br>
+    <a href="#Wednesday">Wednesday</a><br></br>
+    <a href="#Thursday">Thursday</a><br></br>
+    <a href="#Friday">Friday</a><br></br>
+    <a href="Saturday">Saturday</a><br></br>
+    <a href="Sunday">Sunday</a><br></br>
   </div>
 </div></div></td><br></br>
         <td>Average Tech Rate<div align="under"><textarea></textarea></td></div></td>
@@ -137,7 +138,7 @@ section{
     <tr>
     	<td>Number of Repairs Per Month<div align="under"><textarea></textarea></td></div></td>
     	<td></td>
-        <td><button style= "background-color: #FEC85B; color: white; font-size: 18pt" type="button" onclick="alert('This will submit and calculate')">SUBMIT</button></td>
+        <td><button style= "background-color: #FEC85B; color: white; font-size: 18pt" type="button" onclick="myFunction()"('This will submit and calculate')">SUBMIT</button></td>
     </tr>
         
 </table></center><br></br>
